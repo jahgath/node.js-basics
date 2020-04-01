@@ -1,12 +1,9 @@
-// console.log(__dirname);
-// console.log(__filename);
-
-function sayHi() {
-  console.log('hi');
+function callFunction(fun) {
+  fun();
 }
 
-sayHi();
-
 var sayBye = function() {
-  console.log();
+  console.log('bye');
 };
+
+callFunction(sayBye);
