@@ -1,9 +1,5 @@
-function callFunction(fun) {
-  fun();
-}
+var stuff = require('./stuff');
 
-var sayBye = function() {
-  console.log('bye');
-};
-
-callFunction(sayBye);
+console.log(stuff.counter(['hi','hello','you','hey']));
+console.log(stuff.adder(5,6));
+console.log(stuff.adder(stuff.pi,5));
